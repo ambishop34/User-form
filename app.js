@@ -6,7 +6,7 @@ document.getElementById('mobile').addEventListener('blur', validateMobile);
 
 function validateName() {
     const name = document.getElementById('name');
-    const re = /^[A-Za-z]{2,20}$/;
+    const re = /^[a-zA-Z ]{2,30}$/;
     if(!re.test(name.value)) {
         name.classList.add('is-invalid');
     } else {
